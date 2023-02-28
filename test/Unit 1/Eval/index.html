@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <style>
+      /* Write all styles here  */
+      .nav{
+          display: flex;
+          justify-content: space-between;
+          
+          width: 100%;
+          margin: auto;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      /* .nav > div{
+        margin:auto
+      } */
+      .nav >div:nth-child(1){
+        color: red;
+
+      }
+      .nav >div:nth-child(2){
+        display: flex;
+         width: 40%; 
+        margin:auto; 
+        justify-content: space-between;
+        color: #3ba2f1;
+        font-weight: bold;
+        font-size:small;
+      }
+      .nav >button{
+        background-color: red;
+        border: none;
+        color: white;
+        height: 30px;
+        margin: auto;
+        margin-right: 1%;
+        margin-left: 2%;
+      }
+      .top{
+        width: 85%;
+        margin: auto;
+        margin-top: 2%;
+      }
+      .top>div{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-evenly;
+      }
+
+      .top>div>div{
+        width: 30%;
+      }
+      .top>div>div>img{
+        width: 100%;
+      }
+      .mid{
+        display: grid;
+        
+        /* justify-content: center; */
+
+        gap: 15px;
+      }
+      .md{
+        display: grid;
+        grid-template-columns: repeat(3,3fr);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 1px 1px 1px 1px;
+      }
+      .md > img{
+        border-radius: 5px 5px 0 0;
+      }
+      h3~input{
+          text-align: center;
+      }
+      @media only screen and (max-width: 800px) {
+        /* Medium Screen  */
+        .nav{
+          grid-template-columns: repeat(2,2fr);
+        }
+        #top{
+
+        }
+        .mid{
+          grid-template-columns: repeat(2,2fr);
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        /* Small Screen  */
+        .nav{
+          grid-template-columns: repeat(2,2fr);
+        }
+        #top{
+
+        }
+        .mid{
+          grid-template-columns: repeat(1,1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <!-- Create the Navbar Here  -->
+      <div><h1>Zomato</h1></div>
+
+      <div>
+        <p>MENU</p>
+        <p>STORES</p>
+        <p>GIFT CARD</p>
+        <p>CONTACT</p>
+      </div>
+
+      <button>Download App</button>
+    </div>
+
+    <div class="top">
+      <h1>Order</h1>
+      <div>
+        <!-- Use flex to achieve the layout  -->
+        <!-- Here we will have 3 child divs -->
+        <div>
+          <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*" alt="pic1">
+          <h3> Order Online</h3>
+          <p>Stay Home and order to your doorstep</p>
+        </div>
+        <div>
+          <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*" alt="pic1">
+          <h3> Dining</h3>
+          <p>Stay Home and order to your doorstep</p>
+        </div>
+        <div>
+          <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*" alt="pic1">
+          <h3>Nightlife & Clubs</h3>
+          <p>Stay Home and order to your doorstep</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mid">
+      <h1>Our products</h1>
+      <div class="md">
+        <!-- Here will be 6 child divs -->
+        <!-- Use Grid to achieve the layout  -->
+        <div >
+          <img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="pic">
+          <h3>Listing</h3>
+          <input type="button" value="Learn More">
+        </div>
+        <div><img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="pic">
+          <h3>Online Ordering</h3>
+          <input type="button" value="Learn More"></div>
+        <div><img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="pic">
+          <h3>Pro</h3>
+          <input type="button" value="Learn More"></div>
+        <div><img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="pic">
+          <h3>Advertising</h3>
+          <input type="button" value="Learn More"></div>
+        <div><img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="pic">
+          <h3>Events</h3>
+          <input type="button" value="Learn More"></div>
+        <div><img src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png" alt="pic">
+          <h3>Hyperpure</h3>
+          <input type="button" value="Learn More"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <h1>How it works</h1>
+      <div>
+        <!-- Use flex to achieve the layout  -->
+        <!-- Here we will have 3 child divs -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+    <head><title>Masai Navbar</title>
+        <style>
+            .nav{
+                display: flex;
+                /* width: 85%; */
+                margin: auto;
+                justify-content: space-evenly;
+            }
+            img{
+                height: 50px;
+                width:150px;
+                margin-right: 90px;
+                
+            }
+            p:hover{
+                background-color: rgb(236, 160, 202);
+                color: red;
+
+            }
+            #refr{
+                background-color: rgb(214, 249, 248);
+                color: black;
+                /* border-color: blueviolet; */
+                border: none;
+                
+                display:flex;
+                flex-direction: row;
+                text-align:center;
+                padding:2px;
+                /* margin-top: auto; */
+            }
+
+            #refr :hover{
+                background-color: aquamarine;
+            }
+            #lgn{
+                border-color: rgb(243, 234, 234);
+                color: rgb(218, 19, 19);
+                /* border-radius: 10%; */
+                border: 1px;
+                width: 5%;
+                height: 6%;
+            }
+            .icon{
+                width:20px;
+                height:20px;
+                margin:5px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            const element = document.getElementById('refr');
+
+            element?.addEventListener('click',(e)=>{
+                console.log("Iamclicked");
+                element.style.border='1px solid red'
+            })
+        </script>
+
+        <div class="nav">
+
+            
+                <img src="C:\Users\MahiOm\Desktop\masai-code\test1\test\Unit 4N\Day 4\E4COoQHn_400x400.jpg" alt="masai-logo">
+            
+                <!-- <h3>COURSES  v</h3>
+                <h3>FEES & ISA</h3>
+                <h3>ABOUT US</h3>
+                <h3>HIRE FROM US</h3>
+                <h3>FAQ</h3>
+                <h3>EVENTS</h3> -->
+                <p>COURSES  v</p>
+                <p>FEES & ISA</p>
+                <p>ABOUT US</p>
+                <p>HIRE FROM US</p>
+                <p>FAQ</p>
+                <p>EVENTS</p>
+                
+                <div id="refr">
+                    <p >REFER & EARN</p>
+                    <div style="flex-basis: 1;"></div>
+                    <img class="icon" src=""C:\Users\MahiOm\Desktop\masai-code\test1\test\Unit 4N\Day 4\referral_link_icon.20bdadf9.svg"">
+                </div>
+
+            <button id="lgn">LOGIN</button>
+        </div>
+    </body>
+</html>
