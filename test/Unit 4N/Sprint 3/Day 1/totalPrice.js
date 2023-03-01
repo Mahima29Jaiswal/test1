@@ -1,7 +1,7 @@
 var e_commerce = [
-    {products:"earphone", quantity: 4, price:700},
-    {products:"headphone", quantity: 3, price:800},
-    {products:"earpods", quantity: 2, price:1000}
+    {products:"earphone", quantity: 1, price:700},
+    {products:"headphone", quantity: 1, price:800},
+    {products:"earpods", quantity: 1, price:1000}
 ];
 var store=1;
 var total_price=0;
