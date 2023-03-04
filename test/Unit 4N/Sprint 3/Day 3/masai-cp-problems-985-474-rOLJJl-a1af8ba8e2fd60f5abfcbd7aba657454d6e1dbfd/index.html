@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <button id="add">Add</button>
+    <button id="substract">Substract</button>
+    <button id="multiply">Multiply</button>
+    <button id="devide">Devide</button>
+  </body>
+  <script>
+    //Addition..
+    var btn = document.getElementById("add");
+    btn.addEventListener("click",addme)
+    
+    function addme(){
+      var num1 = document.querySelector("#number1").value;
+      var num2 = document.querySelector("#number2").value;
+      let sum = parseInt(num1) + parseInt(num2);
+     
+      alert("Addition: "+sum);
+    }
+    // Substraction...
+    var btnsub = document.getElementById("substract");
+    btnsub.addEventListener("click",subme)
+
+    function subme(){
+      var num1 = document.querySelector("#number1").value;
+      var num2 = document.querySelector("#number2").value;
+      let sub = parseInt(num1) - parseInt(num2);
+
+      alert("Substraction: "+sub);
+    }
+    
+    //Multiplication..
+
+    var btnmulti = document.getElementById("multiply");
+    btnmulti.addEventListener("click", multime);
+
+    function multime(){
+      var num1 = document.querySelector("#number1").value;
+      var num2 = document.querySelector("#number2").value;
+      let multi = parseInt(num1) * parseInt(num2);
+
+      alert("Multiplication: "+multi);
+    }
+
+    //Division
+
+    var btndevide = document.getElementById("devide");
+    btndevide.addEventListener("click", devideme);
+
+    function devideme(){
+      var num1 = document.querySelector("#number1").value;
+      var num2 = document.querySelector("#number2").value;
+      let div = parseInt(num1) / parseInt(num2);
+
+      alert("Division: "+div);
+    }
+  </script>
+</html>
